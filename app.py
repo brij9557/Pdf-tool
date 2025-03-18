@@ -63,5 +63,14 @@ def merge_pdf():
 
     return send_file(merged_pdf_path, as_attachment=True)
 
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "Hello, your service is running!"
+
 if __name__ == "__main__":
-     app.run(host='0.0.0.0', port=int(os.getenv("PORT", 10000)))
+    app.run(host="0.0.0.0", port=10000)
+
