@@ -64,4 +64,5 @@ def merge_pdf():
     return send_file(merged_pdf_path, as_attachment=True)
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=10000)
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 10000)))
+    
