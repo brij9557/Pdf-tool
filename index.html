@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Tools - Convert & Merge</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PDF Tools</h1>
+        <p>Convert & Merge your PDFs easily</p>
+
+        <div class="buttons">
+            <button onclick="uploadFile('excel')">PDF to Excel</button>
+            <button onclick="uploadFile('word')">PDF to Word</button>
+            <button onclick="uploadFile('merge')">Merge PDFs</button>
+        </div>
+
+        <input type="file" id="fileInput" style="display: none" accept=".pdf" multiple>
+    </div>
+
+    <script src="../static/script.js"></script>
+</body>
+</html>
